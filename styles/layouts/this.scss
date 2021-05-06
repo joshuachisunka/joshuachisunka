@@ -1,0 +1,128 @@
+// // @import "/JONAS/Natours_Project/styles/absracts/variables";
+
+// $gutter-horizontal: 6rem;
+// $grid-width: 114rem;
+// $gutter-vertical: 6rem;
+
+
+// .row {
+//     max-width: $grid-width;
+//     background-color: #777;
+//     margin: 0 auto;
+    
+    
+//      // this selects everything except the last child of the row
+//     &:not(:last-child) {
+//         margin-bottom: $gutter-vertical;
+//     }
+
+//     &::after {
+//         content: '';
+//         display: table;
+//         clear: both;
+//     }
+
+//     // @include clearfix;
+
+
+//     /*this allows us to handle all classes of an element that begin with with the col- attribute.  
+//     [class$=] selects all attributes that end with col-  while [class*=] selects all attributes that may contain col- */
+
+
+//     [class^="col-"] {
+//         background-color: red;
+//         float: left;
+
+//         &:not(:last-child) {
+//             margin-right: $gutter-horizontal;
+//             }
+//     }
+
+//     .col-1of-2 {
+//         width: calc((100% - #{$gutter-horizontal}) /2);
+//     }
+
+//     .col-1-of-3 {
+//         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+//     }
+
+//     .col-2-of-3 {
+//         width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+//     }
+
+//     .col-1-of-4 {
+//         width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+//     }
+
+//     .col-2-of-4 {
+//         width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+//     }
+
+//     .col-3-of-4 {
+//         width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+//     }
+// }
+
+    
+.row {
+    max-width: 114rem;
+    background-color: red;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* this selects everything except the last child of the row */
+  .row:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  
+    
+    
+  /*this allows us to handle all classes of an element that begin with with the col- attribute.  
+  [class$=] selects all attributes that end with col-  while [class*=] selects all attributes that may contain col- */
+    
+  [class^="col-"] {
+    background-color: yellow;
+    float: left;
+  }
+    
+  [class^="col-"]:not(:last-child) {
+    margin-right: 6rem;
+  }
+    
+    
+  .col-1-of-2 {  
+      width: calc((100% - 6rem) / 2);
+  }
+    
+  .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+  }
+    
+  .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  }
+    
+  .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4);
+  }
+    
+  .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  }
+    
+  .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  }
+    
+    
+    
+    
+    
+    

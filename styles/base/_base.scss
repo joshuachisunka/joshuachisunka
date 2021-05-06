@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; //this allows us to make the body inheirt the box-sizing from the universal selector
+}
+
+html {
+    // this defines what 1rem is
+    font-size: 62.5%;  //(10/16) * 100 where 10 is the 10px we want and 16px is the default font-size
+}
